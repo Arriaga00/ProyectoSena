@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#fae066] scroll-smooth ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Pizza Cafe Paisa</title>
+</head>
+<style>
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+<header class="w-full h-20 flex gap-3 px-3 py-2">
+    <div class="text-6xl w-1/2">🍕</div>
+    <div class="w-full flex items-center justify-end ">
+        <nav class="flex w-ful gap-7 justify-end items-center">
+            <a class="cursor-pointer " href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+              </a>
+            <a "><div class="relative">
+                <label for="Buscar" class="sr-only"> Buscar </label>
+              
+                <input
+                  type="text"
+                  id="Buscar"
+                  placeholder="Buscar..."
+                  class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm px-2 bg-[#fcf0ae]"
+                />
+              
+                <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
+                  <button type="button" class="text-gray-600 hover:text-gray-700">
+                    <span class="sr-only">Buscar</span>
+              
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-4 w-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                      />
+                    </svg>
+                  </button>
+                </span>
+              </div></a>
+            <a class="flex items-center text-xl cursor-pointer" href="#"><svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
+                <path  stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+              </a>
+        </nav>
+    </div>
+</header>
+<section class="w-full h-20 bg-[#f2c947] mt-2 flex gap-5 justify-center items-center">
+    <img src="https://th.bing.com/th/id/R.dec6ec819a1a7edcb937f73f63daf150?rik=S2yUYBPBrKYdnw&pid=ImgRaw&r=0" alt="pizza" class="h-full w-96">
+    <p class="font-bold text-4xl">20% Pizza Tres Quesos!</p>
+</section>
+<body >
+   <main class="flex justify-center mt-7 flex-col items-center">
+    <p class="font-bold text-2xl">Elige tu pizza Favorita🥵</p>
+    <section class=' w-full max-w-[100rem] relative '>
+      <div id="contenedor" class="w-full pb-5 pt-5 flex gap-4 flex-nowrap overflow-x-auto hide-scrollbar  scroll-smooth " >
+        <!-- Cards -->
+        <article class="tarjeta h-[35rem] w-96 border-2 rounded-[3rem] flex-none border-black flex flex-col items-center justify-center bg-[#f2c947] p-2">
+          <h2 class="text-4xl font-bold uppercase">Hawaiana</h2>
+          <img src="https://babycocina.com/wp-content/uploads/2021/02/pizza-hawaiana.jpg" alt="pizza" class="h-56 w-full">
+          <p class="uppercase font-bold text-slate-600">descripcion</p>
+          <p class="text-lg px-3 text-center font-bold">jamón cocido, piña fresca y queso mozzarella sobre una base de salsa de tomate con orégano.</p>
+          <div class="w-full flex justify-center items-center gap-2 pt-3">
+            <div class="flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1 ">25.000$</p>
+              <p>Pequeña</p>
+            </div>
+            <div class="  flex justify-center items-center flex-col ">
+              <p class="border-r-2 pr-1 border-black">45.000$</p>
+              <p>Mediana</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">70.000$</p>
+              <p>Grande</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">90.000$</p>
+              <p>Extra Grande</p>
+            </div>
+          </div>
+          <button class="rounded-full bg-black w-full py-3 text-white mt-5">Pidela aqui!</button>
+        </article>
+        <article class="tarjeta h-[35rem] w-96 border-2 rounded-[3rem] flex-none border-black flex flex-col items-center justify-center bg-[#f2c947] p-2">
+          <h2 class="text-4xl font-bold uppercase">Peperoni</h2>
+          <img src="https://th.bing.com/th/id/R.fd3ba3e8495417c8e185c4a0e35fd5fd?rik=Bmqku6W8xfEAzg&pid=ImgRaw&r=0" alt="pizza" class="h-56 w-full">
+          <p class="uppercase font-bold text-slate-600">descripcion</p>
+          <p class="text-lg px-3 text-center font-bold">Masa Tradicional Salsa de Tomate Queso Mozzarella Pepperoni <br> <br></p>
+          <div class="w-full flex justify-center items-center gap-2 pt-3">
+            <div class="flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1 ">25.000$</p>
+              <p>Pequeña</p>
+            </div>
+            <div class="  flex justify-center items-center flex-col ">
+              <p class="border-r-2 pr-1 border-black">45.000$</p>
+              <p>Mediana</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">70.000$</p>
+              <p>Grande</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">90.000$</p>
+              <p>Extra Grande</p>
+            </div>
+          </div>
+          <button class="rounded-full bg-black w-full py-3 text-white mt-5">Pidela aqui!</button>
+        </article>
+        <article class="tarjeta h-[35rem] w-96 border-2 rounded-[3rem] flex-none border-black flex flex-col items-center justify-center bg-[#f2c947] p-2">
+          <h2 class="text-4xl font-bold uppercase">Tres quesos</h2>
+          <img src="https://thumbs.dreamstime.com/b/view-above-pizza-delivery-menu-cardboard-box-against-space-text-106400452.jpg" alt="pizza" class="h-56 w-full">
+          <p class="uppercase font-bold text-slate-600">descripcion</p>
+          <p class="text-lg px-3 text-center font-bold">Masa Tradicional Salsa de Tomate Queso Mozzarella, Cheddar y Parmesano</p>
+          <div class="w-full flex justify-center items-center gap-2 pt-3">
+            <div class="flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1 ">25.000$</p>
+              <p>Pequeña</p>
+            </div>
+            <div class="  flex justify-center items-center flex-col ">
+              <p class="border-r-2 pr-1 border-black">45.000$</p>
+              <p>Mediana</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">70.000$</p>
+              <p>Grande</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">90.000$</p>
+              <p>Extra Grande</p>
+            </div>
+          </div>
+          <button class="rounded-full bg-black w-full py-3 text-white mt-5">Pidela aqui!</button>
+        </article>
+
+        <article class="tarjeta h-[35rem] w-96 border-2 rounded-[3rem] flex-none border-black flex flex-col items-center justify-center bg-[#f2c947] p-2 ">
+          <h2 class="text-4xl font-bold uppercase">Pollo</h2>
+          <img src="https://i.ytimg.com/vi/yRA7OelrFt0/maxresdefault.jpg" alt="pizza" class="h-56 w-full">
+          <p class="uppercase font-bold text-slate-600">descripcion</p>
+          <p class="text-lg px-3 text-center font-bold">Masa Tradicional Salsa de Tomate Queso Mozzarella, pollo desmechado <br><br></p>
+          <div class="w-full flex justify-center items-center gap-2 pt-3">
+            <div class="flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1 ">25.000$</p>
+              <p>Pequeña</p>
+            </div>
+            <div class="  flex justify-center items-center flex-col ">
+              <p class="border-r-2 pr-1 border-black">45.000$</p>
+              <p>Mediana</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">70.000$</p>
+              <p>Grande</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">90.000$</p>
+              <p>Extra Grande</p>
+            </div>
+          </div>
+          <button class="rounded-full bg-black w-full py-3 text-white mt-5">Pidela aqui!</button>
+        </article>
+        
+        <article class="tarjeta h-[35rem] w-96 border-2 rounded-[3rem] flex-none border-black flex flex-col items-center justify-center bg-[#f2c947] p-2 ">
+          <h2 class="text-4xl font-bold uppercase">Verduras</h2>
+          <img src="https://th.bing.com/th/id/OIP.zG2XtyfWNuQcZwgMVly4KAHaE8?rs=1&pid=ImgDetMain" alt="pizza" class="h-56 w-full">
+          <p class="uppercase font-bold text-slate-600">descripcion</p>
+          <p class="text-lg px-3 text-center font-bold">Masa Tradicional Salsa de Tomate Queso Mozzarella, pollo desmechado <br><br></p>
+          <div class="w-full flex justify-center items-center gap-2 pt-3">
+            <div class="flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1 ">25.000$</p>
+              <p>Pequeña</p>
+            </div>
+            <div class="  flex justify-center items-center flex-col ">
+              <p class="border-r-2 pr-1 border-black">45.000$</p>
+              <p>Mediana</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">70.000$</p>
+              <p>Grande</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">90.000$</p>
+              <p>Extra Grande</p>
+            </div>
+          </div>
+          <button class="rounded-full bg-black w-full py-3 text-white mt-5">Pidela aqui!</button>
+        </article>
+
+        <article class="tarjeta h-[35rem] w-96 border-2 rounded-[3rem] flex-none border-black flex flex-col items-center justify-center bg-[#f2c947] p-2 ">
+          <h2 class="text-4xl font-bold uppercase">Margarita</h2>
+          <img src="https://cdn.bolivia.com/gastronomia/2011/08/25/pizza-margarita-3684.jpg" alt="pizza" class="h-56 w-full">
+          <p class="uppercase font-bold text-slate-600">descripcion</p>
+          <p class="text-lg px-3 text-center font-bold">Masa Tradicional Salsa de Tomate Queso Mozzarella, pollo desmechado <br><br></p>
+          <div class="w-full flex justify-center items-center gap-2 pt-3">
+            <div class="flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1 ">25.000$</p>
+              <p>Pequeña</p>
+            </div>
+            <div class="  flex justify-center items-center flex-col ">
+              <p class="border-r-2 pr-1 border-black">45.000$</p>
+              <p>Mediana</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">70.000$</p>
+              <p>Grande</p>
+            </div>
+            <div class=" flex justify-center items-center flex-col ">
+              <p class="border-r-2 border-black pr-1">90.000$</p>
+              <p>Extra Grande</p>
+            </div>
+          </div>
+          <button class="rounded-full bg-black w-full py-3 text-white mt-5">Pidela aqui!</button>
+        </article>
+
+        <!-- botones laterales -->
+        <button id="izquierda" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-r">←</button>
+        <button id="derecha" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-l">→</button>
+      </div>
+    </section>
+   </main>
+</body>
+<footer class="w-full bg-black  justify-center items-center flex text-white flex-col pb-1">
+  <p>Pizza Paisa Cafe</p>
+  <p>Te invita a un cafe por compras máximas de 40.000</p>
+  <p>tel : 609 7866</p>
+</footer>
+<script type="module" src="/src/main.js"></script>
+</html>
