@@ -7,4 +7,4 @@
  d.addEventListener('click',(e)=>{
     if(e.target===btnDerecha) contenedorTarjetas.scrollLeft += 400
     if(e.target===btnIzquierda) contenedorTarjetas.scrollLeft -= 400
- })
+ })   
